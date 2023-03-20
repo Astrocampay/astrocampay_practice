@@ -3,17 +3,31 @@
     <head>
         <title>Astrocampay_new_registration_page1</title> 
         <meta charset="utf-8">
+        <meta name="keywords" content="안양어린이천문대, 신규등록">
     </head>
     <body>
-        <h1><a href="Home.html">안양어린이천문대 <strong>신규 등록</strong> 페이지</a></h1>
+        <h1><a href="Home.html">안양어린이천문대 신규등록 페이지</a></h1>
         <ol>
-            <li><h2><u><a href="1.신규등록.html">신규등록</a></u></h2></li>
-            <li><h2><u><a href="2.천문대정보.html">천문대 정보</a></u></h2></li>
-            <li><h2><u><a href="https://cafe.naver.com/astrocamp20/99"
-                target="" title="어린이천문대 교육 커리큘럼">교육과정</a></u></h2></li>
-            <li><h2><u><a href="4.추천도서.html">추천도서</a></u></h2></li>
+            <h2><li><u><a href="1.신규등록.html">신규등록</a></u></li></h2>
+            <h2><li><u><a href="2.천문대정보.html">천문대 정보</a></u></li></h2>
+            <h2><li><u><a href="https://cafe.naver.com/astrocamp20/99"
+                target="" title="어린이천문대 교육 커리큘럼">교육과정</a></u></li></h2>
+            <h2><li><u><a href="4.추천도서.html">추천도서</a></u></li></h2>
         </ol>
-        
-        <img src="은하수.jpg" width="90%">
+        <form action="example.php" method="post">
+            이름<br>
+            <input  type="text" placeholder="아이이름" name="name"> <br><br>
+            학교<br>
+            <input  type="text" placeholder="OO초" name="school"> <br><br>
+            과정<br>
+            <select name="과정" name="procedure">
+                <option value="first">첫걸음</option>
+                <option value="exp">체험</option>
+                <option value="research">탐구</option>
+                <option value="theme">테마</option>
+            </select>
+            <br><br>
+            <input type="submit" value="제출">
+        </form>
     </body>
 </html>
