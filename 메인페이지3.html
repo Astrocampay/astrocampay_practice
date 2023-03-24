@@ -5,21 +5,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>안양어린이천문대 안내 페이지</title>
 	<style>
+		html, body{
+			height: 100%;
+		}
         a{
             color: white;
         }
 		body {
-			margin: 0;
-			padding: 0;
-			line-height: 1.5;
             background-image: url('배경사진.jpg');
-			background-size: cover;
-            background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+            background-position: center center;
+		}
+		.header {
+			border: 0.5vh solid #ccc;
+            display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2.5rem;
+            text-align: center;
+			color: white;
+			height: 10%;
+			margin: 20px;
 		}
 		.grid-container {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: repeat(2, 1fr);
+			grid-gap: 20px;
+			padding: 20px;
+		}
+		.grid-container2 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
 			grid-gap: 20px;
 			padding: 20px;
 		}
@@ -30,7 +48,13 @@
 			align-items: center;
 			font-size: 2.5rem;
             text-align: center;
-
+		}
+		.grid-item2 {
+			border: 0.5vh solid #ccc;
+            display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 5%;
 		}
 		img {
 			display: block;
@@ -53,12 +77,12 @@
 	</style>
 </head>
 <body>
-	<div>
-        <a href="메인페이지3.html"><img src="메인사진.JPG" width="100%"></a>
+	<div class="header">
+		안양어린이천문대
 	</div>
 	<div class="grid-container">
 		<div class="grid-item">
-			<a href="https:/forms.gle/tHQT8R5eTcZhZWZG8">명단<br>등록하기</a>
+			<a href="https://forms.gle/tHQT8R5eTcZhZWZG8">명단<br>등록하기</a>
 		</div>
         <div class="grid-item">
 			<img src="달사진.jpg" alt="Image 1">
@@ -74,13 +98,24 @@
 			<img src="오로라.jpg" alt="Image 2">
 		</div>
 		<div class="grid-item">
-			<a href="https:/cafe.naver.com/ArticleList.nhn?search.clubid=29785723&search.menuid=42&search.boardtype=I">추천도서</a>
+			<a href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29785723&search.menuid=42&search.boardtype=I">추천도서</a>
 		</div>
         <div class="grid-item">
 			<img src="성운.jpg" alt="Image 2">
 		</div>
 		<div class="grid-item">
 			<a href="#">천문대<br>소개</a>
+		</div>
+	</div>
+	<div class="grid-container2">
+		<div>
+			<a href="tel:010-6864-8863"><img src="전화하기.jpg"></a>
+		</div>
+		<div>
+			<a href="https://cafe.naver.com/astrocamp20"><img src="네이버카페.jpg"></a>
+		</div>
+		<div>
+			<img src="인스타그램.jpg">
 		</div>
 	</div>
 </body>
