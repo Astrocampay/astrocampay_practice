@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>웹 페이지</title>
+	<title>안양어린이천문대</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
@@ -11,10 +11,11 @@
 		}
 		.container {
 			display: grid;
+      border: 5px solid pink;
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: repeat(4, 1fr);
 			grid-gap: 5px;
-			height: 200vh;
+      margin-top: auto;
 		}
 		.box13 {
 			display: flex;
@@ -23,44 +24,43 @@
 			font-size: 3rem;
 			background-color: #008680;
 			border: 5px solid #444;
-            margin-top: 50px;
-            cursor: pointer;
+      margin-top: 50px;
+      cursor: pointer;
 		}
-        .box24 {
+    .box24 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #008680;
+			border: 5px solid #444;
+      margin-top: 50px;
+		}
+    .box57 {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			font-size: 3rem;
 			background-color: #008680;
 			border: 5px solid #444;
-            margin-top: 50px;
 		}
-        .box57 {
+    .box68 {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			font-size: 3rem;
 			background-color: #008680;
 			border: 5px solid #444;
-		}
-        .box68 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 3rem;
-			background-color: #008680;
-			border: 5px solid #444;
-            cursor: pointer;
+      cursor: pointer;
 		}
 	</style>
 </head>
-<body background="배경사진.jpg">
+<body>
     <div style="text-align: center;">
             <a href="메인페이지2.html"><img src="메인사진.jpg" width="100%"></a>
     </div>
 	<div class="container">
 		<div class="box13" onclick="location.href='https:/forms.gle/tHQT8R5eTcZhZWZG8';">명단 등록하기</div>
-		<div class="box24" style="background-image: url('달사진.jpg'); background-size: cover;""></div>
+		<div class="box24" style="background-image: url('달사진.jpg'); background-size: cover;"></div>
 		<div class="box13" onclick="location.href='필독안내사항.html';">필독 안내사항</div>
 		<div class="box24" style="background-image: url('오리온대성운.jpg'); background-size: cover;"></div>
 		<div class="box57" style="background-image: url('오로라.jpg'); background-size: cover;"></div>
